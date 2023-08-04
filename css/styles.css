@@ -1,0 +1,81 @@
+:root {
+    --color1: #3669c9;
+    text-decoration: none;
+}
+* {
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html {
+    font-size: 62.5%
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+main {
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 52vw 20vw;
+    grid-template-areas: 
+    "ingreso" "e1";
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6vw;
+    background-color: var(--color1);
+    height: 10vw;
+    font-size: 1.5vw;
+    align-self: start;
+}
+.ingresoSolidario{
+    grid-area: ingreso;
+    height: 100%;
+    background: url("/img/Fondo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.formulario-page {
+    background-color: white;
+    width: 35vw;
+    height: 40vw;
+    border-radius: 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2vw;
+}
+.formulario-titulo{
+    font-size: 2vw;
+}
+.formulario-subtitulo, .formulario div, .formulario form, .formulario form select, .formulario input{
+    font-size: 0.8vw;
+}
+.formulario-titulo div , .formulario-subtitulo, .formulario div, .formulario form select, .formulario input{
+    color: black;
+}
+.ingresoSolidario img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.e1 {
+    grid-area: e1;
+}
+.navbar img {
+    height: 3.3vw;
+    width: 16vw;
+}
