@@ -13,22 +13,22 @@
 <body>
     <nav class="navbar">
         <a href="#">Inicio</a>
-        <a href="#">¿Que es?</a>
-        <img src="img/gobiernodecolombia.png" alt="">
-        <a href="#">Entrega</a>
-        <a href="#">Consultar</a>
+        <a href="#que">¿Que es?</a>
+        <img src="img/gobiernodecolombia.png" alt="gobiernodecolombia">
+        <a href="#etapas">Entrega</a>
+        <a id="botonnavconsultar" href="#">Consultar</a>
     </nav>
     <nav class="navbar-mobile">
         <img src="img/gobiernodecolombia.png" alt="">
         <div class="menu">
-            <a href="#inicio">Inicio</a>
+            <a href="#">Inicio</a>
             <a href="#que">¿Que es?</a>
             <a href="#etapas">Entrega</a>
-            <a href="#faq">Consultar</a>
+            <a href="#">Consultar</a>
         </div>
     </nav>
     <main>
-        <section class="ingresoSolidario">
+        <section  class="ingresoSolidario">
             <div class="registro">
                 <div class="formulario-page">
                     <div class="formulario-titulo">
@@ -36,40 +36,12 @@
                         <div>Ingreso</div>
                         <div>Solidario</div>
                     </div>
-                    <div class="formulario-subtitulo">Por favor ingresa tus datos personales para revisar el estado de
+                    <div class="formulario-subtitulo">Por favor ingresa tus datos personales para revisar el
+                        estado de
                         entrega de tu ingreso.</div>
                     <div class="formulario">
                         <form method="">
-                            <div>Tipo de documento</div>
-                            <form method="">
-                                <select>
-                                    <option value="Cedula">Cedula</option>
-                                    <option value="TarjetaIdentidad">Tarjeta Identidad</option>
-                                    <option value="RegistroCivil">Registro Civil</option>
-                                    <option value="Pasaporte">Pasaporte</option>
-                                </select>
-                            </form>
-                            <input type="tel" />
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="inicio" class="ingresoSolidario-mobile">
-            <div class="registro-mobile">
-                <div class="formulario-page-mobile">
-                    <div class="formulario-titulo-mobile">
-                        <div>Consulta tu estado del</div>
-                        <div>Ingreso</div>
-                        <div>Solidario</div>
-                    </div>
-                    <div class="formulario-subtitulo-mobile">Por favor ingresa tus datos personales para revisar el
-                        estado de
-                        entrega de tu ingreso.</div>
-                    <div class="formulario-mobile">
-                        <form method="">
                             <label>Tipo de documento</label>
-                            <br>
                             <br>
                             <form method="">
                                 <select>
@@ -88,12 +60,12 @@
                             <input type="text">
                             <label>Fecha de expedicion del documento</label>
                             <input type="date">
-                            <label>Numero de Documento</label>
+                            <label>Telefono Movil</label>
                             <input type="tel" />
                         </form>
                     </div>
                 </div>
-                <div class="btn-formulario-mobile">
+                <div class="btn-formulario">
                     <button class="button">Consultar</button>
                 </div>
             </div>
@@ -105,14 +77,28 @@
                 <a href="#que"><button class="button">Conocer mas</button></a>
             </div>
         </section>
-        <section id="que" class="quees-mobile">
-            <p class="quees-mobile-titulo">¿Que es el ingreso solidario?</p>
-            <div class="quees-mobile-container">
-                <div class="quees-mobile-texto-container">
-                    <p class="quees-mobile-texto1">Es un esquema mediante el cual se entrega una transferencia monetaria
+        <section id="que" class="quees">
+            <p class="quees-titulo">¿Que es el ingreso solidario?</p>
+            <div class="quees-container">
+                <div class="quees-texto-container">
+                    <p class="quees-texto1">Es un esquema mediante el cual se entrega una transferencia monetaria
                         en favor de los hogares en situaciön de pobreza y vulnerabilidad que no sean beneficiarios de
                         programas sociales del Estado.</p>
-                    <p class="quees-mobile-texto2">Los hogares en condiciön de pobreza y vulnerabilidad, afectados en
+                    <p class="quees-texto2">Los hogares en condiciön de pobreza y vulnerabilidad, afectados en
+                        sus ingresos como consecuencia de la pandemia del coronavirus, que no hagan parte de los
+                        programas sociales "Familias en Accion", "Colombia Mayor", "Jovenes en Accion" y "Devolucion del
+                        IVA" podran acceder a esta medida social.</p>
+                    <div class="boton-desplazar">Conocer las etapas de entrega</div>
+                    <a href="#etapas"><i class='bx bx-chevron-down'></i></a>
+                </div>
+                <img class="quees-img" src="../img/Drop.png" alt="drop">
+            </div>
+            <div class="quees-container-mobile">
+                <div class="quees-texto-container">
+                    <p class="quees-texto1">Es un esquema mediante el cual se entrega una transferencia monetaria
+                        en favor de los hogares en situaciön de pobreza y vulnerabilidad que no sean beneficiarios de
+                        programas sociales del Estado.</p>
+                    <p class="quees-texto2">Los hogares en condiciön de pobreza y vulnerabilidad, afectados en
                         sus ingresos como consecuencia de la pandemia del coronavirus, que no hagan parte de los
                         programas sociales "Familias en Accion", "Colombia Mayor", "Jovenes en Accion" y "Devolucion del
                         IVA" podran acceder a esta medida social.</p>
@@ -122,35 +108,66 @@
                 <img class="quees-img" src="../img/Drop.png" alt="drop">
             </div>
         </section>
-        <section id="etapas" class="etapas-mobile">
-            <p class="etapas-mobile-titulo">Etapas de Entrega</p>
-            <div class="etapa">
-                <p class="etapas-mobile-subtitulo">Etapa 1</p>
-                <p class="etapas-mobile-fecha">Desde el 7 de Abril</p>
+        <section id="etapas" class="etapas">
+            <div class="etapas-mobile">
+                <p class="etapas-titulo">Etapas de Entrega</p>
+                <div class="etapa-mobile">
+                    <p class="etapas-subtitulo">Etapa 1</p>
+                    <p class="etapas-fecha">Desde el 7 de Abril</p>
+                </div>
+                <div class="etapa-mobile">
+                    <p class="etapas-subtitulo">Etapa 2</p>
+                    <p class="etapas-fecha">9 de Abril al 18 de Abril</p>
+                </div>
+                <div class="etapa-mobile">
+                    <p class="etapas-subtitulo">Etapa 3</p>
+                    <p class="etapas-fecha">18 de Abril al 25 de Abril</p>
+                </div>
+                <p class="etapas-titulo">Bancos Autorizados</p>
+                <div class="etapas-imgs">
+                    <img src="./img/Bancamia.png" alt="Bancamia">
+                    <img src="./img/logo-bancolombia.png" alt="bancolombia">
+                    <img src="./img/CajaSocial.png" alt="CajaSocial">
+                    <img src="./img/Movii.png" alt="Movii">
+                    <img src="./img/DaviPlata.png" alt="DaviPlata">
+                </div>
+                <div class="boton-desplazar">Preguntas Frecuentes</div>
+                <a href="#faq"><i class='bx bx-chevron-down'></i></a>
             </div>
-            <div class="etapa">
-                <p class="etapas-mobile-subtitulo">Etapa 2</p>
-                <p class="etapas-mobile-fecha">9 de Abril al 18 de Abril</p>
+            <div class="etapas-desktop">
+                <p class="etapas-titulo">Etapas de Entrega</p>
+                <div class="etapas-desktop-container">
+                    <div class="etapa-desktop">
+                        <p class="etapas-subtitulo">Etapa 1</p>
+                        <p class="etapas-fecha">Desde el 7 de Abril</p>
+                    </div>
+                    <div class="etapa-desktop">
+                        <p class="etapas-subtitulo">Etapa 2</p>
+                        <p class="etapas-fecha">9 de Abril al 18 de Abril</p>
+                    </div>
+                    <div class="etapa-desktop">
+                        <p class="etapas-subtitulo">Etapa 3</p>
+                        <p class="etapas-fecha">18 de Abril al 25 de Abril</p>
+                    </div>
+                </div>
+                <p class="etapas-titulo">Bancos Autorizados</p>
+                <div class="etapas-imgs">
+                    <img src="./img/Bancamia.png" alt="Bancamia">
+                    <img src="./img/logo-bancolombia.png" alt="bancolombia">
+                    <img src="./img/CajaSocial.png" alt="CajaSocial">
+                    <img src="./img/Movii.png" alt="Movii">
+                    <img src="./img/DaviPlata.png" alt="DaviPlata">
+                </div>
+                <div>
+                    <div class="boton-desplazar">Preguntas Frecuentes</div>
+                    <a href="#faq"><i class='bx bx-chevron-down'></i></a>
+                </div>
             </div>
-            <div class="etapa">
-                <p class="etapas-mobile-subtitulo">Etapa 3</p>
-                <p class="etapas-mobile-fecha">18 de Abril al 25 de Abril</p>
-            </div>
-            <p class="etapas-mobile-titulo">Bancos Autorizados</p>
-            <div class="etapas-mobile-imgs">
-                <img src="./img/Bancamia.png" alt="Bancamia">
-                <img src="./img/logo-bancolombia.png" alt="bancolombia">
-                <img src="./img/CajaSocial.png" alt="CajaSocial">
-                <img src="./img/Movii.png" alt="Movii">
-                <img src="./img/DaviPlata.png" alt="DaviPlata">
-            </div>
-            <div class="boton-desplazar">Preguntas Frecuentes</div>
-            <a href="#faq"><i class='bx bx-chevron-down'></i></a>
         </section>
-        <section id="faq" class="faq-mobile">   
-            <p class="faq-mobile-titulo">Preguntas Frecuentes</p>
-            <div class="faq-mobile-preguntas">
-                <div class="faq-mobile-pregunta">
+        <section id="faq" class="faq">
+            <p class="faq-titulo">Preguntas Frecuentes</p>
+            <div class="faq-preguntas">
+                <div class="faq-pregunta">
                     <p class="numero-pregunta">1</p>
                     <p class="pregunta">Yo había salido como beneficiaria en la primera fase y ahora no aparezco en el
                         listado de beneficiarios ¿Es decir, ya no recibire el beneficio?</p>
@@ -158,56 +175,104 @@
                         Si encontró su nombre en la primera etapa y está plenamente identificado, no ha perdido su
                         beneficio.</p>
                 </div>
-                <div class="faq-mobile-pregunta">
+                <div class="faq-pregunta">
                     <p class="numero-pregunta">2</p>
-                    <p class="pregunta">¿Por qué no aparezco ahora en el listado de ingresosolidario.prosperidadsocial.gov.co?</p>
+                    <p class="pregunta">¿Por qué no aparezco ahora en el listado de
+                        ingresosolidario.prosperidadsocial.gov.co?</p>
                     <p class="respuesta">Estamos actualizando el listado de beneficiarios que recibieron el giro.
-                        Si encontró su nombre en la primera etapa y está plenamente identificado, no ha perdido su beneficio.</p>
+                        Si encontró su nombre en la primera etapa y está plenamente identificado, no ha perdido su
+                        beneficio.</p>
                     <div class="boton-desplazar">Ver mas</div>
                     <a href="#faq3">
-                    <i class='bx bx-chevron-down'></i></a>
+                        <i class='bx bx-chevron-down'></i></a>
                 </div>
-                <div id="faq3" class="faq-mobile-pregunta">
+                <div id="faq3" class="faq-pregunta">
                     <p class="numero-pregunta">3</p>
-                    <p class="pregunta">¿Qué debo hacer porque me llegó el mensaje de que soy beneficiario y no he recibido el pago?</p>
-                    <p class="respuesta">Si usted fue informado de que es beneficiario del programa mediante un mensaje de texto enviado por la entidad financiera en la cual tiene una cuenta o depósito activo, comuníquese con esa entidad financiera para averiguar cómo acceder a los recursos del Ingreso Solidario.
-                        Si usted no tiene una cuenta o depósito con el sistema financiero, y es elegido dentro del programa Ingreso Solidario, pronto recibirá un mensaje con las instrucciones para hacer la apertura de una cuenta digital.</p>
+                    <p class="pregunta">¿Qué debo hacer porque me llegó el mensaje de que soy beneficiario y no he
+                        recibido el pago?</p>
+                    <p class="respuesta">Si usted fue informado de que es beneficiario del programa mediante un mensaje
+                        de texto enviado por la entidad financiera en la cual tiene una cuenta o depósito activo,
+                        comuníquese con esa entidad financiera para averiguar cómo acceder a los recursos del Ingreso
+                        Solidario.
+                        Si usted no tiene una cuenta o depósito con el sistema financiero, y es elegido dentro del
+                        programa Ingreso Solidario, pronto recibirá un mensaje con las instrucciones para hacer la
+                        apertura de una cuenta digital.</p>
                 </div>
-                <div class="faq-mobile-pregunta">
+                <div class="faq-pregunta">
                     <p class="numero-pregunta">4</p>
-                    <p class="pregunta">Consulté en la página web y soy beneficiario, pero aún no me han llamado ni he recibido mensaje de texto ¿Qué debo hacer?</p>
-                    <p class="respuesta">Si usted encontró su nombre y cédula en la base de beneficiarios y no ha recibido un mensaje de texto, significa que hace parte de un ciclo posterior de pagos. Durante esta etapa, las entidades financieras se contactarán con usted para darle las indicaciones de cómo recibir el giro o hacer la apertura de un depósito simplificado a través de su celular</p>
+                    <p class="pregunta">Consulté en la página web y soy beneficiario, pero aún no me han llamado ni he
+                        recibido mensaje de texto ¿Qué debo hacer?</p>
+                    <p class="respuesta">Si usted encontró su nombre y cédula en la base de beneficiarios y no ha
+                        recibido un mensaje de texto, significa que hace parte de un ciclo posterior de pagos. Durante
+                        esta etapa, las entidades financieras se contactarán con usted para darle las indicaciones de
+                        cómo recibir el giro o hacer la apertura de un depósito simplificado a través de su celular</p>
                     <div class="boton-desplazar">Ver mas</div>
                     <a href="#faq5"><i class='bx bx-chevron-down'></i></a>
                 </div>
-                <div id="faq5" class="faq-mobile-pregunta">
+                <div id="faq5" class="faq-pregunta">
                     <p class="numero-pregunta">5</p>
-                    <p class="pregunta">¿Qué debemos hacer los que somos beneficiarios, pero no tenemos celular o cambiamos de número?</p>
-                    <p class="respuesta">Prosperidad Social está trabajando con diferentes organizaciones y fuentes de datos para ubicarlo y contactarlo.
+                    <p class="pregunta">¿Qué debemos hacer los que somos beneficiarios, pero no tenemos celular o
+                        cambiamos de número?</p>
+                    <p class="respuesta">Prosperidad Social está trabajando con diferentes organizaciones y fuentes de
+                        datos para ubicarlo y contactarlo.
                         Lo invitamos a consultar periódicamente la página.</p>
                 </div>
             </div>
             <div class="mas-preguntas">
-                <p class="mas-preguntas-titulo">¿Tienes mas preguntas?</p>
-                <p class="mas-preguntas-subtitulo">Por favor no dudes en contactarnos para poderte dar la informaciön que necesites</p>
-                <div class="btn-formulario-mobile-white">
+                <div class="mas-preguntas-titulo">¿Tienes mas preguntas?</div>
+                <p class="mas-preguntas-subtitulo">Por favor no dudes en contactarnos para poderte dar la informaciön
+                    que necesites</p>
+                <div class="btn-formulario-white">
                     <a href="#contacto"><button class="button">Contactanos</button></a>
                 </div>
             </div>
         </section>
         <section id="contacto" class="contacto">
-            <div class="direccion">
-                <p>Prosperidad Social</p>
-                <p>Carrera 7 No 27 — 18 / Bogota D.C- Colombia</p>
-                <p>Codigo Postal: 110311</p>
-                <p>Horario de Atencion: 8:00 a.m. - 2:00 p.m.</p>
+            <div class="contacto-mobile">
+                <div class="direccion">
+                    <p>Prosperidad Social</p>
+                    <p>Carrera 7 No 27 — 18 / Bogota D.C- Colombia</p>
+                    <p>Codigo Postal: 110311</p>
+                    <p>Horario de Atencion: 8:00 a.m. - 2:00 p.m.</p>
+                </div>
+                <div class="telefono">
+                    <p>Linea Gratuita Nacional: 01-8000-9511 OO</p>
+                    <p>Linea de atenciön Paga (1) 518 881 1,</p>
+                    <p>Conmutador: (57+1) 514 2060</p>
+                    <p>ingresosolidari0@prosperidadsocial.gov.co</p>
+                </div>
+                <div class="gobiernofooter">
+                    <img src="../img/logo_footer.png" alt="logo_footer">
+                    <div class="red-container">
+                        <a class="red" href="https://twitter.com/ProsperidadCol"><i class='bx bxl-twitter'></i></a>
+                        <a class="red" href="https://www.facebook.com/Prosperidad.Social"><i class='bx bxl-facebook'></i></a>
+                        <a class="red" href="https://instagram.com/prosperidadcol"><i class='bx bxl-instagram'></i></a>
+                    </div>
+                </div>
             </div>
-            <img src="../img/logo_footer.png" alt="logo_footer">
-            <div class="telefono">
-                <p>Linea Gratuita Nacional: 01-8000-9511 OO</p>
-                <p>Linea de atenciön Paga (1) 518 881 1,</p>
-                <p>Conmutador: (57+1) 514 2060</p>
-                <p>ingresosolidari0@prosperidadsocial.gov.co</p>
+            <div class="contacto-desktop">
+                <div class="direccion">
+                    <i class='bx bxs-map' ></i>
+                    <p>Prosperidad Social</p>
+                    <p>Carrera 7 No 27 — 18 / Bogota D.C- Colombia</p>
+                    <p>Codigo Postal: 110311</p>
+                    <p>Horario de Atencion: 8:00 a.m. - 2:00 p.m.</p>
+                </div>
+                <div class="gobiernofooter">
+                    <img src="../img/logo_footer.png" alt="logo_footer">
+                    <div class="red-container">
+                        <a class="red" href="https://twitter.com/ProsperidadCol"><i class='bx bxl-twitter'></i></a>
+                        <a class="red" href="https://www.facebook.com/Prosperidad.Social"><i class='bx bxl-facebook'></i></a>
+                        <a class="red" href="https://instagram.com/prosperidadcol"><i class='bx bxl-instagram'></i></a>
+                    </div>
+                </div>
+                <div class="telefono">
+                    <i class='bx bxs-phone'></i>
+                    <p>Linea Gratuita Nacional: 01-8000-9511 OO</p>
+                    <p>Linea de atenciön Paga (1) 518 881 1,</p>
+                    <p>Conmutador: (57+1) 514 2060</p>
+                    <p>ingresosolidari0@prosperidadsocial.gov.co</p>
+                </div>
             </div>
         </section>
     </main>
